@@ -16,7 +16,7 @@ public class ClientService {
         this.clientRepository = clientRepository;
     }
 
-    public void deleteById(int id){
+    public void delete(int id){
         clientRepository.deleteById(id);
     }
 

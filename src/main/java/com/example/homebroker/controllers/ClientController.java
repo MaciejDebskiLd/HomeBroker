@@ -18,12 +18,12 @@ public class ClientController {
 
     @GetMapping("")
     public List<Client> getClients(){
-        return clientService.getAll;
+        return clientService.getAll();
     }
 
     @GetMapping("/{id}")
     public Client getClient(@PathVariable("id") int id){
-        return clientService.get(id);
+        return clientService.getClient(id);
     }
 
     @PostMapping("/create")
@@ -33,7 +33,7 @@ public class ClientController {
     }
 
     @PutMapping("/{id}")
-    public Client updateClient(PathVariable("id") int id, @RequestBody Client client){
+    public Client updateClient(@PathVariable("id") int id, @RequestBody Client client){
         return clientService.update(id, client);
     }
 
