@@ -1,6 +1,5 @@
 package com.example.homebroker.models;
 
-import java.util.StringJoiner;
 
 final public class Offer extends AbstractModel{
 
