@@ -20,7 +20,7 @@ public abstract class AbstractRepository <M extends AbstractModel> {
         return list;
     }
 
-    public M finfById(int id){
+    public M findById(int id){
         checkIsModelExists(id);
         return data.get(id);
     }
